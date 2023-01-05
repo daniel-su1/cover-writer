@@ -9,3 +9,9 @@
 nav{
     background-color: #37517e;
 }
+
+.intro{
+    width: 100%;
+    height: 25em;
+    background-color: black;
+}
