@@ -15,3 +15,9 @@ nav{
     height: 25em;
     background-color: #37517e;
 }
+
+#banner{
+    background-color: #37517e;
+    height: 10em;
+    width: 100%;
+}
