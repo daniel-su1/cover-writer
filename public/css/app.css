@@ -31,5 +31,14 @@ nav{
     background-color: #37517e;
 }
 
+footer a svg{
+    height: 40px;
+    width: 40px;
+    fill: rgb(102, 102, 102);
+    transition-duration: 0.4s;
+}
 
+footer a svg:hover{
+    fill: rgb(22, 77, 196);
+}
 
