@@ -3,25 +3,25 @@
     <%- include('partials/nav') %>
 
     <div class="container" style="height: 100vh;">
-        <h1 class="display-5 fw-bold lh-1 mt-5 mb-3">Give us some info to get started.</h1>
+        <h1 class="display-5 fw-bold lh-1 mt-5 mb-3">Let's get started. What's your name?</h1>
         <div class="row mt-5">
             <div class="col-md-4">
                 <form action="/start" method="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="text" class="form-control" id="name" name="name" value="<%= response.name %>">
                       </div>
                       <div class="mb-3">
                         <label for="title" class="form-label">Job Title</label>
-                        <input type="text" class="form-control" id="title" name="job">
+                        <input type="text" class="form-control" id="title" name="job" value="<%= response.job %>">
                       </div>
                       <div class="mb-3">
                         <label for="job" class="form-label">Job Listing</label>
-                        <textarea class="form-control" id="job" rows="7" name="listing"></textarea>
+                        <textarea class="form-control" id="job" rows="7" name="listing"><%= response.listing %></textarea>
                       </div>
                       <div class="mb-3">
                         <label for="resume" class="form-label">Resume</label>
-                        <textarea class="form-control" id="resume" rows="7" name="resume"></textarea>
+                        <textarea class="form-control" id="resume" rows="7" name="resume"><%= response.resume %></textarea>
                       </div>
 
 
@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-8">
                 <label for="output" class="form-label">Output</label>
-                <textarea class="form-control" id="output" rows="25" readonly></textarea>
+                <textarea class="form-control" id="output" rows="25" readonly><%= response.output %> </textarea>
             </div>
 
         </div>
