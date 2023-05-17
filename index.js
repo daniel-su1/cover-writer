@@ -74,7 +74,7 @@ app.get('/start/:id', (req, res) => {
     let job = response.job.replace(/\W/g, ' ');
     let listing = response.listing.replace(/\W/g, ' ');
 
-    prompt = `{"model": "gpt-3.5-turbo", "prompt": "Write a cover letter for ${applicantName} whose resume is below: ${resumeText} who is applying for the ${job} position listed below: ${listing}", "temperature": 1, "max_tokens": 2000}`
+    prompt = `{"model": "text-davinci-003", "prompt": "Write a cover letter for ${applicantName} whose resume is below: ${resumeText} who is applying for the ${job} position listed below: ${listing}", "temperature": 1, "max_tokens": 2000}`
 
     if(response.output===undefined){
         fetch("https://api.openai.com/v1/completions", {
